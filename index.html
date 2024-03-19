@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover China with our expert guides and personalized tours.">
+    <title>Explore China - Tourist Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Discovery China Tourist Office</h1>
+    </header>
+    <nav>
+        <a href="#home" aria-label="Home">Home</a>
+        <a href="#tourism" aria-label="Tourism">Tourism</a>
+        <a href="#culture" aria-label="Culture">Culture</a>
+        <a href="#history" aria-label="History">History</a>
+        <a href="#contact" aria-label="Contact Us">Contact Us</a>
+    </nav>
+    <section id="home">
+        <div class="home-text">
+            <h2>Welcome to Discovery China Tourist Office</h2>
+            <p>Your gateway to unforgettable experiences in China.</p>
+            <button class="subscribe-button" onclick="openModal()">Plan Your Trip</button>
+        </div>
+    </section>
+    <section id="tourism">
+        <h2>Discover China's Attractions</h2>
+        <p>Explore China's iconic landmarks and breathtaking landscapes with our guided tours.</p>
+        <h3>Our Tours Include:</h3>
+        <ul>
+            <li>Expert Guides: Knowledgeable guides to accompany you through your journey.</li>
+            <li>Custom Itineraries: Tailored experiences based on your interests and preferences.</li>
+            <li>Transportation: Hassle-free transportation arrangements for your convenience.</li>
+            <li>Accommodation: Comfortable accommodations to suit your needs and budget.</li>
+        </ul>
+    </section>
+
+    <section id="culture">
+        <h2>Experience China's Rich Culture</h2>
+        <p>Immerse yourself in China's diverse cultural heritage with our curated cultural experiences.</p>
+        <h3>Our Cultural Experiences:</h3>
+        <ul>
+            <li>Traditional Performances: Witness captivating performances of traditional music, dance, and theater.
+            </li>
+            <li>Hands-on Workshops: Engage in hands-on workshops to learn traditional crafts like calligraphy and
+                pottery.</li>
+            <li>Culinary Tours: Embark on culinary adventures to sample authentic Chinese cuisine.</li>
+        </ul>
+    </section>
+
+    <section id="history">
+        <h2>Unravel China's Fascinating History</h2>
+        <p>Embark on a journey through time to explore China's rich historical heritage.</p>
+        <h3>Our Historical Tours:</h3>
+        <ul>
+            <li>Ancient Sites: Visit ancient sites such as the Great Wall, the Forbidden City, and the Terracotta
+                Army.
+            </li>
+            <li>Museums: Explore museums showcasing artifacts from China's dynastic eras.</li>
+            <li>Historical Reenactments: Experience historical reenactments to get a glimpse into the past.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us to start planning your unforgettable trip to China.</p>
+        <p>Email: info@chinatouristoffice.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 China Tourist Office. All rights reserved.</p>
+    </footer>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" aria-label="Plan Your Trip Form">
+            <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
+            <div class="modal-text">
+                <h2>Plan Your Trip</h2>
+                <p>Let us help you create your dream vacation in China. Fill out the form below and one of our travel
+                    experts will
+                    get in touch with you shortly.</p>
+                <form id="tripPlannerForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Email"><br><br>
+                    <label for="interests">Interests:</label>
+                    <textarea id="interests" name="interests" rows="4" required
+                        aria-label="Interests"></textarea><br><br>
+                    <button class="subscribe-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
